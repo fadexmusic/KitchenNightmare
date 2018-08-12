@@ -1,0 +1,16 @@
+Banana;26;15
+Tomato;38;20
+Pasta;51;30
+Herb;35;25
+Garlic;48;32
+Oil;99;24
+Egg;25;17
+Meat;37;54
+Potato;81;8
+Bun;35;10
+Cheese;30;44
+Milk;25;30
+Sauce;79;37
+Flour;67;12
+Broth;25;64
+Onion;44;27

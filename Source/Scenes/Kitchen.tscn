@@ -1,0 +1,638 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Scripts/Kitchen.cs" type="Script" id=1]
+[ext_resource path="res://Instances/Fridge.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Instances/Pan.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Instances/Table.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Instances/Cursor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Instances/Bin.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Fonts/Main.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Fonts/Big.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Sprites/Menu.png" type="Texture" id=9]
+[ext_resource path="res://Fonts/Pixeled.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=11]
+[ext_resource path="res://Sounds/ShiftEnd.wav" type="AudioStream" id=12]
+[ext_resource path="res://Sounds/Pause.wav" type="AudioStream" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 15
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 10 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 33
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 10 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 13
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 10 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 1, 1, 1, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+
+[sub_resource type="StyleBoxFlat" id=5]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 1, 1, 1, 0 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+
+[sub_resource type="DynamicFont" id=6]
+
+size = 14
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 10 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Kitchen" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="Fridge" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 384, 64 )
+
+[node name="Pan" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 711, 256 )
+
+[node name="Table" parent="." index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 64, 256 )
+
+[node name="Cursor" parent="." index="3" instance=ExtResource( 5 )]
+
+[node name="Bin" parent="." index="4" instance=ExtResource( 6 )]
+
+position = Vector2( 240, 448 )
+
+[node name="MoneyLabel" type="Label" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 233.0
+margin_top = 160.0
+margin_right = 328.0
+margin_bottom = 209.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
+text = "money"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Money" type="Label" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 32.0
+margin_top = 207.0
+margin_right = 330.0
+margin_bottom = 254.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 1, 0.987579, 0.855469, 1 )
+text = "0"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="PauseMenu" type="ReferenceRect" parent="." index="7"]
+
+pause_mode = 2
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_right = 736.0
+margin_bottom = 640.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Pause", "Visibility" ]
+
+[node name="Node2D" type="Node2D" parent="PauseMenu" index="0"]
+
+z_index = 20
+_sections_unfolded = [ "Z Index" ]
+
+[node name="ColorRect" type="ColorRect" parent="PauseMenu/Node2D" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -288.0
+margin_top = -32.0
+margin_right = 768.0
+margin_bottom = 672.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 0.187843 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="PauseMenu/Node2D" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = 96.0
+margin_right = 481.0
+margin_bottom = 512.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 9 )
+patch_margin_left = 64
+patch_margin_top = 64
+patch_margin_right = 64
+patch_margin_bottom = 64
+
+[node name="Label" type="Label" parent="PauseMenu/Node2D" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 6.0
+margin_top = 226.0
+margin_right = 430.0
+margin_bottom = 268.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.686275, 0.545098, 0.501961, 1 )
+text = "...................on the menu.................."
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="resume" type="Button" parent="PauseMenu/Node2D" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -3.0
+margin_top = 255.0
+margin_right = 439.0
+margin_bottom = 371.0
+rect_min_size = Vector2( 0, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 11 )
+custom_colors/font_color = Color( 0.686275, 0.545098, 0.501961, 1 )
+custom_colors/font_color_hover = Color( 0.686275, 0.545098, 0.501961, 0.823216 )
+custom_colors/font_color_pressed = Color( 0.686275, 0.545098, 0.501961, 0.78451 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "....resume"
+flat = true
+align = 2
+
+[node name="resume2" type="Button" parent="PauseMenu/Node2D" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -3.0
+margin_top = 356.0
+margin_right = 439.0
+margin_bottom = 472.0
+rect_min_size = Vector2( 0, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 11 )
+custom_colors/font_color = Color( 0.686275, 0.545098, 0.501961, 1 )
+custom_colors/font_color_hover = Color( 0.686275, 0.545098, 0.501961, 0.823216 )
+custom_colors/font_color_pressed = Color( 0.686275, 0.545098, 0.501961, 0.78451 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "........leave"
+flat = true
+align = 2
+
+[node name="Label2" type="Label" parent="PauseMenu/Node2D" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 126.0
+margin_right = 448.0
+margin_bottom = 238.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.223529, 0.239216, 0.247059, 1 )
+text = "-on break-"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="EndMenu" type="ReferenceRect" parent="." index="8"]
+
+pause_mode = 2
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 256.0
+margin_right = 736.0
+margin_bottom = 640.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Pause", "Visibility" ]
+
+[node name="Node2D" type="Node2D" parent="EndMenu" index="0"]
+
+z_index = 20
+_sections_unfolded = [ "Z Index" ]
+
+[node name="ColorRect" type="ColorRect" parent="EndMenu/Node2D" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -288.0
+margin_top = -32.0
+margin_right = 768.0
+margin_bottom = 672.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 0.187843 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="EndMenu/Node2D" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = 96.0
+margin_right = 481.0
+margin_bottom = 512.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 9 )
+patch_margin_left = 64
+patch_margin_top = 64
+patch_margin_right = 64
+patch_margin_bottom = 64
+
+[node name="Label" type="Label" parent="EndMenu/Node2D" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 32.0
+margin_top = 226.0
+margin_right = 430.0
+margin_bottom = 268.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.686275, 0.545098, 0.501961, 1 )
+text = "...................on the menu.................."
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="resume2" type="Button" parent="EndMenu/Node2D" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -3.0
+margin_top = 356.0
+margin_right = 439.0
+margin_bottom = 472.0
+rect_min_size = Vector2( 0, 20 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 11 )
+custom_colors/font_color = Color( 0.686275, 0.545098, 0.501961, 1 )
+custom_colors/font_color_hover = Color( 0.686275, 0.545098, 0.501961, 0.823216 )
+custom_colors/font_color_pressed = Color( 0.686275, 0.545098, 0.501961, 0.78451 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "........leave"
+flat = true
+align = 2
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="Earned" type="Label" parent="EndMenu/Node2D" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 44.0
+margin_top = 261.0
+margin_right = 256.0
+margin_bottom = 373.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.686275, 0.545098, 0.501961, 1 )
+text = "earned:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="RecordLabel" type="Label" parent="EndMenu/Node2D" index="5"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 321.0
+margin_right = 430.0
+margin_bottom = 367.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.282353, 0.74902, 0.513726, 1 )
+text = "new record!"
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Cash" type="Label" parent="EndMenu/Node2D" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 217.0
+margin_top = 261.0
+margin_right = 429.0
+margin_bottom = 373.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.282353, 0.74902, 0.513726, 1 )
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="Titlew" type="Label" parent="EndMenu/Node2D" index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 32.0
+margin_top = 128.0
+margin_right = 448.0
+margin_bottom = 240.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.223529, 0.239216, 0.247059, 1 )
+text = "-shift end-"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ProgressBar" type="ProgressBar" parent="." index="9"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 992.0
+margin_bottom = 8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+custom_styles/fg = SubResource( 4 )
+custom_styles/bg = SubResource( 5 )
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 0.0
+exp_edit = false
+rounded = false
+percent_visible = false
+_sections_unfolded = [ "Rect", "Visibility", "custom_styles" ]
+
+[node name="TimeElapsed" type="Label" parent="." index="10"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_top = -3.0
+margin_right = 320.0
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 6 )
+text = "cooking for:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ShiftEnd" type="AudioStreamPlayer" parent="." index="11"]
+
+stream = ExtResource( 12 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Pause" type="AudioStreamPlayer" parent="." index="12"]
+
+stream = ExtResource( 13 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[connection signal="pressed" from="PauseMenu/Node2D/resume" to="." method="Resume"]
+
+[connection signal="pressed" from="PauseMenu/Node2D/resume2" to="." method="Leave"]
+
+[connection signal="pressed" from="EndMenu/Node2D/resume2" to="." method="Leave"]
+
+

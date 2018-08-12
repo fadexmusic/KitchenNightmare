@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/TrashDone.wav-e5fe9c0b11c00e5beca0f0e347acc889.sample"
+
+[deps]
+
+source_file="res://Sounds/TrashDone.wav"
+dest_files=[ "res://.import/TrashDone.wav-e5fe9c0b11c00e5beca0f0e347acc889.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

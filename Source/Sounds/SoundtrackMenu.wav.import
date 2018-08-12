@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SoundtrackMenu.wav-d9b6810d5d591082e86c81a5f01c63f1.sample"
+
+[deps]
+
+source_file="res://Sounds/SoundtrackMenu.wav"
+dest_files=[ "res://.import/SoundtrackMenu.wav-d9b6810d5d591082e86c81a5f01c63f1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

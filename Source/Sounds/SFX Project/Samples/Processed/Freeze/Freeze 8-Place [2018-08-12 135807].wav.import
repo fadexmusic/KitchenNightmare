@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Freeze 8-Place [2018-08-12 135807].wav-c2c7d721a3407e20775aa22b551c18c8.sample"
+
+[deps]
+
+source_file="res://Sounds/SFX Project/Samples/Processed/Freeze/Freeze 8-Place [2018-08-12 135807].wav"
+dest_files=[ "res://.import/Freeze 8-Place [2018-08-12 135807].wav-c2c7d721a3407e20775aa22b551c18c8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

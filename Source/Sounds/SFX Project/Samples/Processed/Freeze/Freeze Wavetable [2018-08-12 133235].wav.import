@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Freeze Wavetable [2018-08-12 133235].wav-cbc40d230a47c5758884f42f05b26ff1.sample"
+
+[deps]
+
+source_file="res://Sounds/SFX Project/Samples/Processed/Freeze/Freeze Wavetable [2018-08-12 133235].wav"
+dest_files=[ "res://.import/Freeze Wavetable [2018-08-12 133235].wav-cbc40d230a47c5758884f42f05b26ff1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

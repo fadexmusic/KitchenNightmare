@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Freeze Instrument [2018-08-12 131418].wav-6b1d80e224ba49c1b22342aab1ece39b.sample"
+
+[deps]
+
+source_file="res://Sounds/SFX Project/Samples/Processed/Freeze/Freeze Instrument [2018-08-12 131418].wav"
+dest_files=[ "res://.import/Freeze Instrument [2018-08-12 131418].wav-6b1d80e224ba49c1b22342aab1ece39b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

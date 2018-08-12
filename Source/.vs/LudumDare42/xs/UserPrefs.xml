@@ -1,0 +1,24 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Scripts/Menu.cs">
+    <Files>
+      <File FileName="Scripts/Fridge.cs" Line="20" Column="9" />
+      <File FileName="Scripts/Cursor.cs" Line="103" Column="57" />
+      <File FileName="Scripts/Slot.cs" Line="19" Column="38" />
+      <File FileName="Scripts/Table.cs" Line="111" Column="27" />
+      <File FileName="Scripts/Pan.cs" Line="15" Column="26" />
+      <File FileName="Scripts/Food.cs" Line="66" Column="78" />
+      <File FileName="Scripts/Kitchen.cs" Line="97" Column="44" />
+      <File FileName="Scripts/Bin.cs" Line="71" Column="31" />
+      <File FileName="Scripts/Menu.cs" Line="33" Column="26" />
+      <File FileName="Scripts/GameMode.cs" Line="14" Column="87" />
+      <File FileName="Scripts/Global.cs" Line="7" Column="1" />
+      <File FileName="Scripts/SceneSwitcher.cs" Line="13" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
