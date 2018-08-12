@@ -57,7 +57,7 @@ public class GameMode : Node2D
         global.gameMode = 1;
         SceneSwitcher switcher = (SceneSwitcher)GetTree().GetRoot().GetNode("SceneSwitcher");
         switcher.ChangeScene("res://Scenes/Kitchen.tscn");
-        switcher.SwitchMusic(0);
+        switcher.SwitchMusic(1);
         // Replace with function body
     }
     double GetTimeRecord()

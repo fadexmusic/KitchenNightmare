@@ -4,3 +4,9 @@
 /Users/vitekpaulik/Documents/dev/godot/LudumDare42/.mono/temp/obj/Debug/Kitchen Nightmare.csproj.CoreCompileInputs.cache
 /Users/vitekpaulik/Documents/dev/godot/LudumDare42/.mono/temp/obj/Debug/Kitchen Nightmare.dll
 /Users/vitekpaulik/Documents/dev/godot/LudumDare42/.mono/temp/obj/Debug/Kitchen Nightmare.pdb
+/Users/vitekpaulik/Documents/dev/godot/KitchenNightmare/Source/.mono/temp/bin/Debug/Kitchen Nightmare.dll
+/Users/vitekpaulik/Documents/dev/godot/KitchenNightmare/Source/.mono/temp/bin/Debug/Kitchen Nightmare.pdb
+/Users/vitekpaulik/Documents/dev/godot/KitchenNightmare/Source/.mono/temp/obj/Debug/Kitchen Nightmare.csprojResolveAssemblyReference.cache
+/Users/vitekpaulik/Documents/dev/godot/KitchenNightmare/Source/.mono/temp/obj/Debug/Kitchen Nightmare.csproj.CoreCompileInputs.cache
+/Users/vitekpaulik/Documents/dev/godot/KitchenNightmare/Source/.mono/temp/obj/Debug/Kitchen Nightmare.dll
+/Users/vitekpaulik/Documents/dev/godot/KitchenNightmare/Source/.mono/temp/obj/Debug/Kitchen Nightmare.pdb

@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Scripts/Pan.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Scripts/GameMode.cs">
     <Files>
       <File FileName="Scripts/Food.cs" Line="16" Column="15" />
       <File FileName="Scripts/GameMode.cs" Line="60" Column="31" />
-      <File FileName="Scripts/SceneSwitcher.cs" Line="32" Column="17" />
+      <File FileName="Scripts/SceneSwitcher.cs" Line="32" Column="1" />
       <File FileName="Scripts/Fridge.cs" Line="32" Column="19" />
       <File FileName="Scripts/Slot.cs" Line="30" Column="1" />
       <File FileName="Scripts/RecipeList.cs" Line="1" Column="1" />
       <File FileName="Scripts/Kitchen.cs" Line="217" Column="8" />
-      <File FileName="Scripts/Table.cs" Line="44" Column="9" />
+      <File FileName="Scripts/Table.cs" Line="44" Column="1" />
       <File FileName="Scripts/Pan.cs" Line="125" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
